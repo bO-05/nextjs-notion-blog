@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'My Blog',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  domain: 'https://nextjs-notion-blog-peach.vercel.app/',
   author: 'B G Adam',
 
   // open graph metadata (optional)
@@ -19,7 +19,7 @@ export default siteConfig({
   // social usernames (optional)
   twitter: 'async_dime',
   github: 'bO-05',
-  linkedin: 'gilang-adam',
+  // linkedin: 'gilang-adam',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
