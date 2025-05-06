@@ -17,7 +17,7 @@ export default siteConfig({
   description: 'My Blog',
 
   // social usernames (optional)
-  twitter: 'async_dime',
+  twitter: 'asynchronope',
   github: 'bO-05',
   // linkedin: 'gilang-adam',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
