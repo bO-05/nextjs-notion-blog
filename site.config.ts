@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'My Blog',
-  domain: 'https://nextjs-notion-blog-peach.vercel.app/',
+  domain: 'https://asynchronope.vercel.app/',
   author: 'B G Adam',
 
   // open graph metadata (optional)
