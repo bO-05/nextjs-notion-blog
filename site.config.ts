@@ -11,7 +11,7 @@ export default siteConfig({
   // basic site info (required)
   name: 'My Blog',
   domain: 'https://asynchronope.vercel.app/',
-  author: 'B G Adam',
+  author: 'Adam',
 
   // open graph metadata (optional)
   description: 'My Blog',
