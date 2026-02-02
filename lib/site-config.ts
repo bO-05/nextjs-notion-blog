@@ -16,7 +16,10 @@ export interface SiteConfig {
   newsletter?: string
   youtube?: string
   zhihu?: string
-  mastodon?: string;
+  mastodon?: string
+  devto?: string
+  portfolio?: string
+  medium?: string
 
   defaultPageIcon?: string | null
   defaultPageCover?: string | null

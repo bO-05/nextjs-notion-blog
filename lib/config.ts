@@ -61,6 +61,9 @@ export const youtube: string | null = getSiteConfig('youtube', null)
 export const linkedin: string | null = getSiteConfig('linkedin', null)
 export const newsletter: string | null = getSiteConfig('newsletter', null)
 export const zhihu: string | null = getSiteConfig('zhihu', null)
+export const devto: string | null = getSiteConfig('devto', null)
+export const portfolio: string | null = getSiteConfig('portfolio', null)
+export const medium: string | null = getSiteConfig('medium', null)
 
 export const getMastodonHandle = (): string | null => {
   if (!mastodon) {
@@ -163,8 +166,8 @@ export const site: Site = {
 export const fathomId = isDev ? null : process.env.NEXT_PUBLIC_FATHOM_ID
 export const fathomConfig = fathomId
   ? {
-      excludedDomains: ['localhost', 'localhost:3000']
-    }
+    excludedDomains: ['localhost', 'localhost:3000']
+  }
   : undefined
 
 export const posthogId = process.env.NEXT_PUBLIC_POSTHOG_ID

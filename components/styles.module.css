@@ -106,6 +106,18 @@
   color: #c9510c;
 }
 
+.devto:hover {
+  color: #0a0a0a;
+}
+
+.portfolio:hover {
+  color: #8b5cf6;
+}
+
+.medium:hover {
+  color: #00ab6c;
+}
+
 .youtube:hover {
   color: #ff0000;
 }
