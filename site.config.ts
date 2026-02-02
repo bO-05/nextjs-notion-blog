@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'My Blog',
-  domain: 'https://asynchronope.vercel.app/',
+  domain: 'https://asynchronope.my.id/',
   author: 'Adam',
 
   // open graph metadata (optional)
@@ -20,7 +20,7 @@ export default siteConfig({
   twitter: 'asynchronope',
   github: 'bO-05',
   devto: 'asynchronope',
-  portfolio: 'https://asynchronope.my.id/',
+  portfolio: 'https://3d.asynchronope.my.id/',
   medium: '@giladam01',
   // linkedin: 'gilang-adam',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
