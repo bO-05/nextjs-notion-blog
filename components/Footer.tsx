@@ -120,7 +120,7 @@ export const FooterImpl: React.FC = () => {
           <a
             className={styles.portfolio}
             href={config.portfolio}
-            title={`3D Portfolio`}
+            title={`Portfolio`}
             target='_blank'
             rel='noopener noreferrer'
           >
