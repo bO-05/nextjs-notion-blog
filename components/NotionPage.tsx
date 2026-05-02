@@ -6,7 +6,12 @@ import { useRouter } from 'next/router'
 
 import cs from 'classnames'
 import { PageBlock } from 'notion-types'
-import { formatDate, getBlockTitle, getPageProperty } from 'notion-utils'
+import {
+  formatDate,
+  getBlockTitle,
+  getBlockValue,
+  getPageProperty
+} from 'notion-utils'
 import BodyClassName from 'react-body-classname'
 import { NotionRenderer } from 'react-notion-x'
 import TweetEmbed from 'react-tweet-embed'
@@ -183,7 +188,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   }, [site, recordMap, lite])
 
   const keys = Object.keys(recordMap?.block || {})
-  const block = recordMap?.block?.[keys[0]]?.value
+  const block = getBlockValue(recordMap?.block?.[keys[0]])
 
   // const isRootPage =
   //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
@@ -212,13 +217,13 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const title = getBlockTitle(block, recordMap) || site.name
 
-  console.log('notion page', {
-    isDev: config.isDev,
-    title,
-    pageId,
-    rootNotionPageId: site.rootNotionPageId,
-    recordMap
-  })
+  if (config.isDev) {
+    console.log('notion page', {
+      title,
+      pageId,
+      rootNotionPageId: site.rootNotionPageId
+    })
+  }
 
   if (!config.isServer) {
     // add important objects to the window global for easy debugging
@@ -233,8 +238,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const socialImage = mapImageUrl(
     getPageProperty<string>('Social Image', block, recordMap) ||
-    (block as PageBlock).format?.page_cover ||
-    config.defaultPageCover,
+      (block as PageBlock).format?.page_cover ||
+      config.defaultPageCover,
     block
   )
 

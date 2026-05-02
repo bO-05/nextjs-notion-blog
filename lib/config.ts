@@ -26,10 +26,8 @@ if (!rootNotionPageId) {
 }
 
 // if you want to restrict pages to a single notion workspace (optional)
-export const rootNotionSpaceId: string | null = parsePageId(
-  getSiteConfig('rootNotionSpaceId', null),
-  { uuid: true }
-)
+export const rootNotionSpaceId: string | null =
+  parsePageId(getSiteConfig('rootNotionSpaceId', null), { uuid: true }) ?? null
 
 export const pageUrlOverrides = cleanPageUrlMap(
   getSiteConfig('pageUrlOverrides', {}) || {},
@@ -166,8 +164,8 @@ export const site: Site = {
 export const fathomId = isDev ? null : process.env.NEXT_PUBLIC_FATHOM_ID
 export const fathomConfig = fathomId
   ? {
-    excludedDomains: ['localhost', 'localhost:3000']
-  }
+      excludedDomains: ['localhost', 'localhost:3000']
+    }
   : undefined
 
 export const posthogId = process.env.NEXT_PUBLIC_POSTHOG_ID

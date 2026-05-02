@@ -5,6 +5,7 @@ import { PageBlock } from 'notion-types'
 import {
   getBlockIcon,
   getBlockTitle,
+  getBlockValue,
   getPageProperty,
   isUrl,
   parsePageId
@@ -28,7 +29,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const recordMap = await notion.getPage(pageId)
 
   const keys = Object.keys(recordMap?.block || {})
-  const block = recordMap?.block?.[keys[0]]?.value
+  const block = getBlockValue(recordMap?.block?.[keys[0]])
 
   if (!block) {
     throw new Error('Invalid recordMap for page')
