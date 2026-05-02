@@ -11,10 +11,10 @@ export default siteConfig({
   // basic site info (required)
   name: 'My Blog',
   domain: 'https://blog.asynchronope.my.id/',
-  author: 'Adam',
+  author: 'Gilang Adam',
 
   // open graph metadata (optional)
-  description: 'My Blog',
+  description: 'A blog by Gilang Adam',
 
   // social usernames (optional)
   portfolio: 'https://asynchronope.my.id/',
