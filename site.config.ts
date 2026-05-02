@@ -10,17 +10,17 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'My Blog',
-  domain: 'https://asynchronope.my.id/',
+  domain: 'https://blog.asynchronope.my.id/',
   author: 'Adam',
 
   // open graph metadata (optional)
   description: 'My Blog',
 
   // social usernames (optional)
+  portfolio: 'https://asynchronope.my.id/',
   twitter: 'asynchronope',
   github: 'bO-05',
   devto: 'asynchronope',
-  portfolio: 'https://3d.asynchronope.my.id/',
   medium: '@giladam01',
   // linkedin: 'gilang-adam',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
