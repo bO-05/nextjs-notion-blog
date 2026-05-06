@@ -3,28 +3,28 @@
   "short_name": "Writings & Opinions",
   "icons": [
     {
-      "src": "/favicon.png",
+      "src": "/favicon.png?v=20260506",
       "type": "image/png",
       "sizes": "32x32"
     },
     {
-      "src": "/favicon-96x96.png",
+      "src": "/favicon-96x96.png?v=20260506",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/favicon-192x192.png",
+      "src": "/favicon-192x192.png?v=20260506",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/web-app-manifest-192x192.png",
+      "src": "/web-app-manifest-192x192.png?v=20260506",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable"
     },
     {
-      "src": "/web-app-manifest-512x512.png",
+      "src": "/web-app-manifest-512x512.png?v=20260506",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
