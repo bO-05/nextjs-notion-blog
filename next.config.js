@@ -6,6 +6,16 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   swcMinify: true,
   staticPageGenerationTimeout: 300,
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'blog.asynchronope.my.id' }],
+        destination: 'https://blog.asynchronope.tech/:path*',
+        permanent: true
+      }
+    ]
+  },
   images: {
     domains: [
       'www.notion.so',
